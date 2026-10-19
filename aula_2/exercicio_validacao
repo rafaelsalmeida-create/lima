@@ -1,0 +1,12 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+<head>
+<title>minha pagina</title>
+</head>
+<body>
+<h1>Bem-Vindo a minha pagina</h1>
+<p> esse é um parágrafo sem fechamento </p>
+<img src="foto.jpg" alt="foto qualquer">
+<a href="https://www.senai.br">clique aqui</a>
+</body>
+</html>

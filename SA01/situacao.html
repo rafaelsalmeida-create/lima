@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos SENAI</title>
+  
+  <style>
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #e5e5e5;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    
+    .banner {
+      width: 100%;
+      height: 250px;
+      background-color: #666;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+    .titulo-secao {
+      font-size: 1.8rem;
+      color: #111;
+      margin-top: 10px;
+    }
+
+    
+    .lista-cursos {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+  
+    .curso-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+    }
+
+    
+    .curso-imagem {
+      width: 200px;
+      height: 130px;
+      background-color: #666;
+      flex-shrink: 0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .curso-imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+    .curso-conteudo {
+      flex: 1;
+    }
+
+    .curso-conteudo h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .curso-conteudo p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   
+    <div class="banner">
+      
+      <img src="images/banner-senai..png" alt="SENAI">
+    </div>
+
+    
+    <h1 class="titulo-secao">Qual curso você deseja escolher?</h1>
+
+    
+    <div class="lista-cursos">
+      
+     
+      <div class="curso-card">
+        <div class="curso-imagem">
+          
+          <img src="images/imagem-senai.png" alt="Foto do Curso 1">
+        </div>
+        <div class="curso-conteudo">
+          <h2>Indústria</h2>
+          <p>
+            O SENAI oferece cursos profissionalizantes que preparam os alunos para o mercado de trabalho. Com aulas teóricas e práticas, os estudantes desenvolvem habilidades em áreas como indústria, tecnologia e mecânica. O objetivo é formar profissionais qualificados e ampliar as oportunidades de emprego.<a href="https://youtu.be/PmU__88GZNQ?si=4GLVXpstaHcKD0AF" target="_blank">video </a>
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="curso-card">
+        <div class="curso-imagem">
+         
+          <img src="images/curso1..png" alt="Foto do Curso 2">
+        </div>
+        <div class="curso-conteudo">
+          <h2>Desenvolvimento de sistemas</h2>
+          <p>
+            O curso de Desenvolvimento de Sistemas do SENAI ensina os alunos a criar sites, aplicativos e programas de computador. Durante o curso, eles aprendem linguagens de programação, bancos de dados e tecnologias web. Essa formação ajuda a preparar profissionais para trabalhar na área de tecnologia da informação.
+            <a href="https://youtu.be/14ZiEr279hQ?si=CJNhglODyljYJgrv" target="_blank">video sobre o tema</a>
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="curso-card">
+        <div class="curso-imagem">
+          
+          <img src="images/curso2..png" alt="Foto do Curso 3">
+        </div>
+        <div class="curso-conteudo">
+          <h2>mecânica automotiva</h2>
+          <p>
+            O curso de Mecânica Automotiva do SENAI ensina a consertar e fazer a manutenção de veículos, preparando os alunos para trabalhar em oficinas e empresas automotivas.
+             <a href="https://youtu.be/CQy7JA973RI?si=JSKDneQEwt9pMRdi" target="_blank">video </a>
+          </p>
+        </div>
+      </div>
+      <table>
+
+      </table>
+      <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <section>
+    <h2>Formulario</h2>
+    <form action="cadastro.php" method="post">
+      <label>Nome:</label>
+      <input type="text" name="nome" placeholder="Digite seu nome">
+    </p>
+    <p>
+      <label>Senha:</label>
+      <input type="password" name="senha" required maxlength="8" placeholder="Digite sua senha">
+    </p>
+
+    <p>
+      <label>Telefone:</label>
+      <input type="tel" name="telefone" placeholder="Digite seu telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" title="Digite o telefone no formato 00-00000-0000">
+    </p>
+
+    <p>
+      <label>Cep:</label>
+      <input type="text" name="cep" placeholder="Digite seu Cep" pattern="[0-9]{5}-[0-9]{3}" title="Digite o Cep no formato 00000-000">
+    </p>
+
+    <p>
+      <label>email:</label>
+      <input type="email" name="email" placeholder="Digite seu email">
+    </p>
+  </section>
+
+  <p>
+    <p><label>Sobre você:</label></p>
+    <textarea name="bio" rows="10" cols="100"></textarea disabled>
+  </p>
+
+  <p>
+    <input type="radio" name="sexo" value="masculino">Masculino
+    <input type="radio" name="sexo" value="feminino">Feminino
+  </p>
+
+  <p><label>Interesses:</label></p>
+  <p>
+    <input type="checkbox" name="interesses[]" value="indústria">indústria
+    <input type="checkbox" name="interesses[]" value="desenvolvimento de sistemas">desenvolvimento de sistemas
+    <input type="checkbox" name="interesses[]" value="mecânica automotiva">mecânica automotiva
+
+    <p><label>cidade:</label></p>
+    <select name="cidade">
+      <option value="Mococa">Mococa</option>
+      <option value="são joão">são joão</option>
+      <option value="ribeirão preto">ribeirão preto</option>
+    </select>
+
+    <p><label>Foto de perfil:</label></p>
+    <input type="file" name="foto">
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </form>
+    </section>
+     
+    </select>
+</body>
+</html>
+
+
+    </div>
+  </div>
+
+</body>
+</html>
