@@ -1,21 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1, initial-scale=1.0">
-  <title>horizontal</title>
-  <link rel="stylesheet" href="suspenso.css">
-</head>
-<body>
- <ul>
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Serviços</a></li>
-  <li><a class="linksub" href="#"> Web Design></a></li>
-   <li><a class="linksub" href="#"> Marketing></a></li>
-   <li><a class="linksub" href="#"> Consultoria></a></li>
-  
- </ul>
-</li>
-<li><a href="#">Contato</a></li>
-</body>
-</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.menu {
+  list-style: none;
+  background-color: #333;
+  display: flex;
+}
+
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #555;
+}
+
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.submenu li a {
+  padding: 12px 16px;
+}
+
+
+.has-submenu:hover .submenu {
+  display: block;
+}
