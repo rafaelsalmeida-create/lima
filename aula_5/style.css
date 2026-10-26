@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.destaque {
+    color: blue;
+    font-weight: bold;
+}
+#titulo-principal {
+    color: red;
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: arial, sans-serif;
+    color : darkgreen;
+}
+h4 {
+    color: blue
+    text-align center, (left,right,justify);
+    font-size: 20px
+}
+img{
+    width:200px;
+height:auto;
+border:2px solid black;
+display:block;
+    margin: auto;
+
+    }
