@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=!1, initial-scale=1.0">
   <title>diagramacao</title>
+  
   <style>
   .container {
     width: 400px;
@@ -11,6 +12,7 @@
     border: 5px solid #000000;
     background-color: #f9f9f9;
     text-align: center;
+    position: relative;
   }
 
   img {
@@ -23,6 +25,9 @@
       height: 150px;
       background-color: #3431da;
       display: inline-block;
+      position: fixed;
+      left: 30px;
+      top: 30px;
     }
 
     .item2 {
@@ -30,6 +35,9 @@
       height: 150px;
       background-color: #da3131;
       display: inline-block;
+      position: absolute;
+      right: 0px;
+    
     }
   </style>
 </head>
@@ -47,8 +55,10 @@
         <span>Exemplo vertical-align</span>
 
   <div>
+    
     <img>
      <span>Exemplo vertical-align</span>
+     </div>
 <div class="item1">ITEM 1</div>
 <div class="item2">ITEM 2</div>
 
